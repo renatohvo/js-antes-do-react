@@ -1,4 +1,4 @@
-# JS - Antes do React
+# JS - Antes do React (em andamento)
 
 [Rocketseat](https://www.youtube.com/@rocketseat "https://www.youtube.com/@rocketseat") - [Diego Fernandes](https://github.com/diego3g "@diego3g")
 

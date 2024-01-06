@@ -18,3 +18,11 @@ document.body.innerHTML += '<p>' + ('nickname' in user) + '</p>';
 document.body.innerHTML += '<p>' + Object.keys(user) + '</p>';
 document.body.innerHTML += '<p>' + JSON.stringify(Object.values(user)) + '</p>';
 document.body.innerHTML += '<p>' + JSON.stringify(Object.entries(user)) + '</p>';
+
+// Desestruturação
+const { address, idade: age, nickname = 'Mary' } = user
+document.body.innerHTML += '<p>' + JSON.stringify({ address, age, nickname }) + '</p>';
+function mostrarIdade({ idade }) {
+  return idade;
+}
+document.body.innerHTML += '<p>Sua idade é: ' + mostrarIdade(user) + '</p>';
