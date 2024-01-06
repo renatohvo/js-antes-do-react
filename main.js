@@ -26,3 +26,10 @@ function mostrarIdade({ idade }) {
   return idade;
 }
 document.body.innerHTML += '<p>Sua idade é: ' + mostrarIdade(user) + '</p>';
+
+// Rest Operator
+const { name, idade, ...rest } = user;  
+document.body.innerHTML += '<p>' + JSON.stringify(rest) + '</p>';
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const [first, ,third, ...res] = array;
+document.body.innerHTML += '<p>' + JSON.stringify({ first, third, res }) + '</p>';
