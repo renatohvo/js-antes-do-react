@@ -115,3 +115,9 @@ document.body.innerHTML += '<p>' + JSON.stringify(allIsNumber) + '</p>';
 
 const oneItemIsNotNumber = arrayEverySome.some(item => typeof item !== 'number');
 document.body.innerHTML += '<p>' + JSON.stringify(oneItemIsNotNumber) + '</p>';
+
+const par = array.find(item => item % 2 === 0);
+document.body.innerHTML += '<p>' + JSON.stringify(par) + '</p>';
+
+const parIndex = array.findIndex(item => item % 2 === 0);
+document.body.innerHTML += '<p>' + JSON.stringify(parIndex) + '</p>';
