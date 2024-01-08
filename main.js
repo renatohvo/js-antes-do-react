@@ -57,3 +57,30 @@ document.body.innerHTML += '<p>' + JSON.stringify({ employee }) + '</p>';
 // Optional Chain
 document.body.innerHTML += '<p>' + JSON.stringify(employee.address?.zip?.code ?? 'Não Informado') + '</p>';
 document.body.innerHTML += '<p>' + JSON.stringify(employee.address?.showFullAddress?.()) + '</p>';
+
+// Métodos Array
+for (const i of array) {
+  document.body.innerHTML += i ;
+}
+document.body.innerHTML += '<p></p>';
+array.forEach(item => {
+  document.body.innerHTML += item ;
+});
+document.body.innerHTML += '<p></p>';
+const newArray = [];
+array.forEach(item => {
+  newArray.push(item * 2);
+});
+document.body.innerHTML += '<p>' + JSON.stringify(newArray) + '</p>';
+
+// map, filter, every, some, find, findIndex, reduce
+const newArrayMap = array.map(item => { // Array sempre do mesmo tamanho do original(map)
+  if(item % 2 === 0){
+    return item * 10;
+  }
+  return item;
+});
+document.body.innerHTML += '<p>' + JSON.stringify(newArrayMap) + '</p>';
+
+
+
